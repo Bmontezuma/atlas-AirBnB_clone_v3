@@ -6,6 +6,3 @@
 ## ***Authors***
 - [Ahmad Nawabi](https://github.com/AhmadNawabi)
 - [Brandon Montezuma](https://github.com/Bmontezuma)
-
-
-
