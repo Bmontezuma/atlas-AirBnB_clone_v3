@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 Amenities view module.
+
+This module defines routes for managing Amenity objects in the API.
 """
 
 from flask import jsonify, abort, request
@@ -11,8 +13,7 @@ from models import storage, Amenity
 @app_views.route('/amenities', methods=['GET'])
 def get_amenities():
     """Retrieves the list of all Amenity objects"""
-    amenities = [amenity.to_dict() for amenity
-                 in storage.all(Amenity).values()]
+    amenities = [amenity.to_dict() for amenity in storage.all(Amenity).values()]
     return jsonify(amenities)
 
 
