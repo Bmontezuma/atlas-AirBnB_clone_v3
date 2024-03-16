@@ -28,7 +28,7 @@ The initial focus lies in manipulating a robust storage system. This storage eng
 
 This abstraction facilitates easy switching of storage types without the need for extensive updates across your codebase. The console serves as a valuable tool for validating this storage engine.
 
-![Image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240315%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240315T230551Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5c5ccfb58e7341d6f52aba5f5bd0f0926c8a8af4f00039ea8708cb86125203c5)
+![Image](https://www.bing.com/images/blob?bcid=rB5U9gonT8sGx-w2kaIQfn3OBFlM.....7I)
 
 ## ***Web Static***
 
@@ -40,7 +40,7 @@ In this phase, we focus on creating the static components of the web application
 
 By completing these steps, we'll establish the static elements of our application, setting the stage for dynamic functionality in subsequent phases. Let's dive in and bring our application to life on the web!
 
-![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/87c01524ada6080f40fc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240315%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240315T230551Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b304a7e030fdbb4dd30387d37a9d1c31ccb49d489af332e1b32b949a2540a312)
+![image](https://www.bing.com/images/blob?bcid=rJZgjHjwgMsGx-w2kaIQfn3OBFlM.....5I)
 
 ## ***MySQL Storage***
 
@@ -50,4 +50,13 @@ To enhance the storage capabilities of our application, we'll replace the file-b
 - ***Map Models to Database Tables:*** *Each model in our application will be mapped to a corresponding table in the MySQL database, ensuring seamless integration between our application and the database*.
 - ***Utilize an O.R.M. (Object-Relational Mapping):*** *Employ an O.R.M. to streamline the interaction between our application's objects and the database, simplifying data access and manipulation*.
 
-![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/5284383714459fa68841.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240315%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240315T230551Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=123639d082e5052fcdce7c3a35fdd2d0cc86d89e8c8212834476ee1cdc296525)
+![image](https://www.bing.com/images/blob?bcid=rHKvwFImXssGx-w2kaIQfn3OBFlM.....5M)
+
+## ***Web Framework - Templating***
+
+In this phase, we'll introduce a web framework and templating to make our application dynamic. Here's what we'll do:
+
+- ***Create Your First Web Server in Python:*** *Set up a basic web server using a Python web framework*.
+- ***Make Your Static HTML File Dynamic:*** *Utilize objects stored in a file or database to dynamically populate content in our HTML files*.
+
+![image](https://www.bing.com/images/blob?bcid=rBxpxxKCF8sGx-w2kaIQfn3OBFlM.....x0)
