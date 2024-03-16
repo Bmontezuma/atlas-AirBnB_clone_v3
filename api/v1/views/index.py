@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-"""Import the app_views blueprint 
-    from the api.v1.views module"""
-from api.v1.views import app_views
-"""Import the jsonify function 
-    from flask module
-"""
+"""Module implementing API endpoint for 
+retrieving statistics on object 
+types using count() method from storage."""
 from flask import jsonify
-"""Define a route for the 
-    app_views blueprint at the 
-    endpoint '/status'
-"""
+from api.v1.views import app_views
+from models import storage
 
 
 @app_views.route('/status')
@@ -22,3 +17,15 @@ def app_views():
         with the status "OK"
     """
     return jsonify({"status": "OK"})
+
+
+@app_views.route('/api/v1/stats', methods=['GET'])
+def get_stats():
+    """Retrieve counts of each object type using 
+    the count() method from storage."""
+    counts = {
+        'users': storage.count('User'),
+        'post': storage.count('Post'),
+        'comments': storage.count('Comment')
+    }
+    return jsonify(counts)
