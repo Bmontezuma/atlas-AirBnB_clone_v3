@@ -28,7 +28,7 @@ The initial focus lies in manipulating a robust storage system. This storage eng
 
 This abstraction facilitates easy switching of storage types without the need for extensive updates across your codebase. The console serves as a valuable tool for validating this storage engine.
 
-![Image](https://www.bing.com/images/blob?bcid=rB5U9gonT8sGx-w2kaIQfn3OBFlM.....7I)
+![Image](https://i.pinimg.com/564x/21/32/a9/2132a9b1cd5a7ead275abe0ad82d081f.jpg)
 
 ## ***Web Static***
 
@@ -40,7 +40,7 @@ In this phase, we focus on creating the static components of the web application
 
 By completing these steps, we'll establish the static elements of our application, setting the stage for dynamic functionality in subsequent phases. Let's dive in and bring our application to life on the web!
 
-![image](https://www.bing.com/images/blob?bcid=rJZgjHjwgMsGx-w2kaIQfn3OBFlM.....5I)
+![image](https://i.pinimg.com/564x/21/32/a9/2132a9b1cd5a7ead275abe0ad82d081f.jpg)
 
 ## ***MySQL Storage***
 
@@ -50,7 +50,7 @@ To enhance the storage capabilities of our application, we'll replace the file-b
 - ***Map Models to Database Tables:*** *Each model in our application will be mapped to a corresponding table in the MySQL database, ensuring seamless integration between our application and the database*.
 - ***Utilize an O.R.M. (Object-Relational Mapping):*** *Employ an O.R.M. to streamline the interaction between our application's objects and the database, simplifying data access and manipulation*.
 
-![image](https://www.bing.com/images/blob?bcid=rHKvwFImXssGx-w2kaIQfn3OBFlM.....5M)
+![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/5284383714459fa68841.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a82cb9c265b07988c480829649b2c0c128a6ab7dc206f2a25d976aa11c18b6d0)
 
 ## ***Web Framework - Templating***
 
@@ -59,4 +59,15 @@ In this phase, we'll introduce a web framework and templating to make our applic
 - ***Create Your First Web Server in Python:*** *Set up a basic web server using a Python web framework*.
 - ***Make Your Static HTML File Dynamic:*** *Utilize objects stored in a file or database to dynamically populate content in our HTML files*.
 
-![image](https://www.bing.com/images/blob?bcid=rBxpxxKCF8sGx-w2kaIQfn3OBFlM.....x0)
+![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/cb778ec8a13acecb53ef.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=94a1c798fa9f5f33e12910d2d24944554f6cd572c7f3937cb8c892cd4a0b391e)
+
+## ***RESTful API***
+
+In this phase, we'll expose all objects stored in our application via a JSON web interface and manipulate these objects through a RESTful API. Here's what we'll do:
+
+- ***Expose Objects via JSON Web Interface:*** *Create endpoints to retrieve all objects stored in our application in JSON format*.
+- ***Manipulate Objects via RESTful API:*** *Implement endpoints to manipulate (create, read, update, delete) objects through RESTful API calls*.
+
+![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/06fccc41df40ab8f9d49.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=85afce913220899cbf33893f422dc3003a40ac56d3d7b76c934350a43b1fb4e3)
+
+
