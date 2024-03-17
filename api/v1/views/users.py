@@ -60,7 +60,7 @@ def update_user(user_id):
         abort(404)
     elif not user_data:
         abort(400, "Not a JSON")
-    
+
     for key, value in user_data.items():
         if key not in ["id", "email", "created_at", "updated_at"]:
             setattr(user, key, value)
