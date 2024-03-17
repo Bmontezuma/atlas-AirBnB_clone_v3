@@ -142,6 +142,67 @@ Overall, APIs play a crucial role in modern software development by enabling int
 ```
 GET /api/users
 ```
+### ***HTTP Method for Creating a Resource***
+
+*The HTTP method used to create a resource is the ***`POST`*** method. When a client sends a ***`POST`*** request to a server, it includes data in the request body, which the server processes to create a new resource. This method is commonly utilized in web development to add new entries or objects to an application, such as creating a new user account, posting a message, or adding a product to an online store.*
+
+### ***HTTP Method for Updating a Resource***
+
+*The HTTP method used to update a resource is the ***`PUT`*** method. When a client sends a ***`PUT`*** request to a server, it typically includes data representing the updated version of the resource in the request body. The server then processes this data to modify the existing resource accordingly. This method is commonly employed in web applications for actions like updating user profiles, editing blog posts, or modifying product information.*
+
+### ***HTTP Method for Deleting a Resource***
+
+*The HTTP method used to delete a resource is the ***`DELETE`*** method. When a client sends a ***`DELETE`*** request to a server, it specifies the resource to be deleted. The server then removes the specified resource from its storage or database. This method is crucial for managing data in web applications, allowing users to remove unwanted entries, such as deleting user accounts, removing comments, or eliminating outdated files.*
+
+### ***Requesting a REST API***
+
+*To request a REST API, clients typically utilize various HTTP methods to interact with the server's resources. Commonly used HTTP methods for requesting a REST API include:*
+- ***`GET`***: *Retrieve data from the server.*
+- ***`POST`***: *Create new data on the server.*
+- ***`PUT`***: *Update existing data on the server.*
+- ***`DELETE`***: *Remove data from the server.*
+*Clients construct HTTP requests using these methods along with relevant headers and request bodies to communicate their intentions to the server. The server then processes these requests and returns appropriate responses, typically in JSON or XML format, containing the requested data or indicating the outcome of the operation.*
+
+This project consists of Python scripts and unit tests adhering to specific guidelines and requirements.
+
+### ***Python Scripts***
+
+- ***`Interpretation`***: *All Python scripts will be interpreted on Ubuntu 20.04 LTS using Python 3.8.5.*
+- ***`Execution`***: All files must be executable.
+- ***`Shebang`***: *The first line of all scripts must be* ***`#!/usr/bin/python3`***.
+- ***`Newline`***: *All files should end with a newline*.
+- ***`Documentation`***: *Modules, classes, and functions should have appropriate documentation explaining their purpose and functionality*.
+- ***`Coding Style`***: *The code should adhere to the PEP8 coding style, verified using pycodestyle*.
+- ***`Length`***: *File length will be tested using* ***`wc`***.
+- ***Documentation Check***:
+  - ***Modules:*** ***`python3 -c 'print(__import__("my_module").__doc__)'`***
+  - ***Classes***: ***`python3 -c 'print(__import__("my_module").MyClass.__doc__)'`***
+  - ***Functions:*** ***`python3 -c 'print(__import__("my_module").my_function.__doc__)'`*** *and* ***`python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`***
+
+### ***Python Unit Tests***
+
+- ***Execution***: Tests should be executed using ***`python3 -m unittest discover tests`***.
+- ***Organization***: *Test files should be inside a folder named* ***`tests`***, *following the same structure as the project. For example*, ***`models/base_model.py`*** *should have corresponding tests in* ***`tests/test_models/test_base_model.py`***.
+- ***Naming Convention***: *Test files and folders should start with* ***`test_`***.
+- ***File Structure***: *Test files should follow the same organization as the project files*.
+- ***Use of unittest module***: *All tests should use the* ***`unittest`*** *module*.
+- ***Collaboration***: *Collaboration on test cases is encouraged to cover all edge cases and ensure comprehensive testing*.
+
+## Installation
+
+Instructions on how to install and set up the project locally.
+
+## Usage
+
+Instructions on how to use and run the project.
+
+## Contributing
+
+Guidelines for contributing to the project.
+
+## License
+
+Information about the project's license.
 
 
 
