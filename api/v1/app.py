@@ -13,6 +13,7 @@ from models import storage
 
 app = Flask(__name__)
 
+# CORS setup
 CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 
 app.register_blueprint(app_views)
@@ -42,4 +43,6 @@ def handle_404(exception):
     return(resp)
 
 if __name__ == "__main__":
-    app.run(getenv("HBNB_API_HOST"), getenv("HBNB_API_PORT"))
+    app.run(
+        getenv("HBNB_API_HOST", "0.0.0.0"), 
+        getenv("HBNB_API_PORT", 5000))
