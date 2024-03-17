@@ -25,7 +25,7 @@ def get_state(state_id):
     return jsonify(state.to_dict())
 
 
-@app_veiws.route('/states/<state_id>', methods=["DELETE"], 
+@app_veiws.route('/states/<state_id>', methods=["DELETE"],
                  strict_slashes=False)
 def delete_state(state_id):
     """Delete an object by its id"""
@@ -59,7 +59,7 @@ def update_state(state_id):
         abort(404)
     elif not state_data:
         abort(400, "Not a JSON")
-    
+
     for key, value in state_data.items():
         if key not in ["id", "created_at", "updated_at"]:
             setattr(state, key, value)
