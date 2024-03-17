@@ -6,68 +6,143 @@
 ## ***Authors***
 - [Ahmad Nawabi](https://github.com/AhmadNawabi)
 - [Brandon Montezuma](https://github.com/Bmontezuma)
+                          
+# ***Concepts for project***
+- [AirBnB clone](https://intranet.atlasschool.com/concepts/865)
+- [REST API](https://intranet.atlasschool.com/concepts/866)
 
-*This project aims to deploy a simplified version of the Airbnb website on your server. While we won't be implementing all features, we'll cover essential concepts of the higher-level programming track.*
+# ***Resources for project***
+- [REST API concept page](https://intranet.atlasschool.com/concepts/866)
+- [Learn REST: A RESTful Tutorial](https://www.restapitutorial.com/)
+- [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
+- [HTTP access control (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Flask cheatsheet](https://s3.eu-west-3.amazonaws.com/hbtn.intranet.project.files/holbertonschool-higher-level_programming+/301/flask_cheatsheet.pdf)
+- [What are Flask Blueprints, exactly?](https://stackoverflow.com/questions/24420857/what-are-flask-blueprints-exactly)
+- [Flask](https://palletsprojects.com/p/flask/)
+- [Modular Applications with Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/)
+- [Flask tests](https://flask.palletsprojects.com/en/1.1.x/testing/)
+- [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/)
+- [AirBnB clone - RESTful API](https://www.youtube.com/watch?v=LrQhULlFJdU&feature=youtu.be)
 
-***The project comprises:***
+# ***Learning Objectives***
+### ***What REST means***
 
-- ***Command Interpreter***: *A tool to manipulate data without a visual interface, akin to a Shell, facilitating development and debugging*.
-- ***Website (Front-end)***: *Displaying the final product to users, combining static and dynamic elements*.
-- ***Database or Files***: *Storing data in the form of objects*.
-- ***API***: *Providing a communication interface between the front-end and data, allowing retrieval, creation, deletion, and updating of information*.
+*"REST" stands for Representational State Transfer. It's an architectural style for designing networked applications. When applied to APIs, RESTful principles dictate that APIs should be designed in a way that aligns with the following key concepts:*
+- ***`Resource-based:`*** *Resources (such as data objects or services) are identified by unique URIs (Uniform Resource Identifiers). These resources are manipulated using a fixed set of operations (typically HTTP methods like GET, POST, PUT, DELETE) representing standard CRUD (Create, Read, Update, Delete) operations.*
+- ***`Stateless:`*** *Each request from a client to the server must contain all the information necessary to understand and process the request. The server should not store any client context between requests. This makes the system more scalable and reliable.*
+- ***`Client-Server Architecture:`*** *There is a clear separation between the client and server. Clients are not concerned with the data storage on the server, while servers are not concerned with the user interface or user state on the client.*
+- ***`Cacheability:`*** *Responses from the server should be explicitly labeled as cacheable or non-cacheable. This helps improve performance by allowing clients to reuse previously fetched responses.*
+- ***`Layered System:`*** *The architecture should support a layered system, allowing intermediaries such as proxies and caches to be inserted between clients and servers. This improves scalability by enabling components to be deployed independently and reused across different parts of the application.*
+- ***`Uniform Interface:`*** *The uniform interface constraint simplifies and decouples the architecture, allowing each part to evolve independently. It is the fundamental constraint that drives the decoupling of clients and servers and allows each to evolve independently. It includes four key principles:*
+    - ***`Identification of resources:`*** *Resources are identified by URIs.*
+    - ***`Manipulation of resources through representations:`*** *Clients manipulate resources through representations provided by the server. These representations can be in various formats such as JSON, XML, or HTML.*
+    - ***`Self-descriptive messages:`*** *Each message should include enough information for the recipient to understand how to process the message*.
+    - ***`Hypermedia as the engine of application state (HATEOAS):`*** *The server provides hypermedia links in the response, allowing clients to navigate the API dynamically.*
 
-## ***Console***
+### ***What API means***
+### ***API Overview***
 
-The console serves as the command interpreter for managing objects within the data model. With it, you can:
+*API stands for Application Programming Interface. It refers to a set of rules, protocols, and tools that allow different software applications to communicate with each other. APIs define the methods and data formats that applications can use to request and exchange information.*
 
-- *Create your data model*.
-- *Manage (create, update, destroy, etc.) objects via a console/command interpreter*.
-- *Store and persist objects to a file (JSON file)*.
+### ***Importance of APIs***
 
-The initial focus lies in manipulating a robust storage system. This storage engine abstracts the interaction between "My object" and "How they are stored and persisted". Essentially, this abstraction ensures that regardless of whether you're working in the console code (the command interpreter), front-end, or RestAPI (which will be built later), you won't need to concern yourself with the specifics of how your objects are stored.
+*APIs are essential for enabling software integration and interoperability. They allow developers to build upon existing functionality without needing to understand the inner workings of the systems they're interacting with. Instead, developers can interact with APIs through well-defined interfaces, which often involve sending HTTP requests and receiving responses in standard formats like JSON or XML.*
 
-This abstraction facilitates easy switching of storage types without the need for extensive updates across your codebase. The console serves as a valuable tool for validating this storage engine.
+### ***Types of APIs***
 
-![Image](https://i.pinimg.com/564x/21/32/a9/2132a9b1cd5a7ead275abe0ad82d081f.jpg)
+- ***Web APIs***: *These APIs are accessed over the internet using standard protocols such as HTTP. They typically provide access to web services, databases, or other online resources.*
 
-## ***Web Static***
+- ***Library APIs***: *These APIs are provided by libraries or software development kits (SDKs) and allow developers to interact with the functionality provided by those libraries.*
 
-In this phase, we focus on creating the static components of the web application. Here's what we'll do:
+- ***Operating System APIs***: *These APIs are provided by operating systems and allow applications to interact with system resources such as files, processes, and hardware.*
 
-- ***Learn HTML/CSS:*** *We'll delve into HTML and CSS to understand the basics of web page structuring and styling*.
-- ***Create the HTML of your application:*** *We'll develop the HTML structure of our application, laying the foundation for the user interface*.
-- ***Create a template for each object:*** *Each object within the application will have its own template, ensuring consistency and ease of development*.
+- ***Hardware APIs***: *These APIs provide access to hardware components such as sensors, cameras, or storage devices.*
 
-By completing these steps, we'll establish the static elements of our application, setting the stage for dynamic functionality in subsequent phases. Let's dive in and bring our application to life on the web!
+## ***Role in Software Development***
 
-![image](https://i.pinimg.com/564x/21/32/a9/2132a9b1cd5a7ead275abe0ad82d081f.jpg)
+*APIs play a crucial role in modern software development, enabling developers to create complex systems by leveraging the functionality provided by other applications, services, or platforms.*
 
-## ***MySQL Storage***
+# ***CORS Overview***
 
-To enhance the storage capabilities of our application, we'll replace the file-based storage system with a MySQL database. Here's how we'll do it:
+*CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers that controls access to resources from different origins (domains) on the internet.
 
-- ***Replace File Storage with Database Storage:*** *Swap out the file-based storage system with MySQL, allowing for more robust data management and scalability*.
-- ***Map Models to Database Tables:*** *Each model in our application will be mapped to a corresponding table in the MySQL database, ensuring seamless integration between our application and the database*.
-- ***Utilize an O.R.M. (Object-Relational Mapping):*** *Employ an O.R.M. to streamline the interaction between our application's objects and the database, simplifying data access and manipulation*.
+When a web page makes a request to a different domain (origin) using XMLHttpRequest or Fetch API, the browser typically restricts the response if the server's response doesn't include the appropriate CORS headers. This restriction is known as the "same-origin policy" and is in place to prevent malicious websites from accessing sensitive data from other websites without permission.
 
-![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/5284383714459fa68841.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a82cb9c265b07988c480829649b2c0c128a6ab7dc206f2a25d976aa11c18b6d0)
+CORS allows servers to specify which origins are allowed to access their resources. This is done by including specific HTTP response headers like ***`Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`***, etc.*
 
-## ***Web Framework - Templating***
+## ***Key CORS Concepts:***
 
-In this phase, we'll introduce a web framework and templating to make our application dynamic. Here's what we'll do:
+- ***`Origin`***: *The combination of protocol, domain, and port from which a resource is requested. For example, ***`https://example.com`***.*
 
-- ***Create Your First Web Server in Python:*** *Set up a basic web server using a Python web framework*.
-- ***Make Your Static HTML File Dynamic:*** *Utilize objects stored in a file or database to dynamically populate content in our HTML files*.
+- ***`Cross-Origin Request`***: *A request for a resource from a different origin than the one from which the current document originated.*
 
-![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/cb778ec8a13acecb53ef.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=94a1c798fa9f5f33e12910d2d24944554f6cd572c7f3937cb8c892cd4a0b391e)
+- ***`Preflight Request`***: *A CORS preflight request is an HTTP request that is made by the browser automatically as part of the CORS protocol. It uses the OPTIONS method and includes headers indicating the HTTP methods and headers that will be used in the subsequent actual request.*
 
-## ***RESTful API***
+- ***`Simple Requests`***: *Certain types of requests (GET, POST, HEAD) with specific content types are considered "simple" and don't trigger a preflight request.*
 
-In this phase, we'll expose all objects stored in our application via a JSON web interface and manipulate these objects through a RESTful API. Here's what we'll do:
+- ***`Credentials`***: *CORS requests can be made with or without credentials (e.g., cookies, HTTP authentication). Servers can control whether credentials are allowed for cross-origin requests using the ***`Access-Control-Allow-Credentials`*** header.*
 
-- ***Expose Objects via JSON Web Interface:*** *Create endpoints to retrieve all objects stored in our application in JSON format*.
-- ***Manipulate Objects via RESTful API:*** *Implement endpoints to manipulate (create, read, update, delete) objects through RESTful API calls*.
+*CORS is an important aspect of web security and allows for controlled access to resources across different domains while maintaining security and privacy. Properly configuring CORS policies is crucial for enabling cross-origin communication between web applications when necessary while still protecting against unauthorized access.*
 
-![image](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2018/6/06fccc41df40ab8f9d49.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240316%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20240316T130718Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=85afce913220899cbf33893f422dc3003a40ac56d3d7b76c934350a43b1fb4e3)
+# ***API Overview***
+
+*An API, or Application Programming Interface, is a set of rules, protocols, and tools that allows different software applications to communicate with each other. APIs define how different software components should interact, specifying the methods and data formats that applications can use to request and exchange information.*
+
+*In simpler terms, an API can be thought of as a bridge that allows two different pieces of software to talk to each other. It provides a way for developers to access the functionality of another application or service without needing to understand how that functionality is implemented internally.*
+
+## ***Types of APIs***
+
+### ***`Web APIs`***
+*These are APIs exposed over the internet, allowing developers to access web services, databases, or other online resources. Web APIs are commonly used to enable communication between web applications.*
+
+### ***`Library APIs`***
+*Libraries and software development kits (SDKs) often provide APIs that allow developers to interact with the functionality provided by those libraries. For example, a graphics library might provide an API for drawing shapes and images.*
+
+### ***`Operating System APIs`***
+*Operating systems provide APIs that allow applications to interact with system resources such as files, processes, and hardware. These APIs enable developers to create applications that can run on different operating systems.*
+
+### ***`Hardware APIs`***
+*Hardware components such as sensors, cameras, or storage devices often expose APIs that allow software applications to interact with them. These APIs enable developers to create applications that can utilize hardware capabilities.
+
+Overall, APIs play a crucial role in modern software development by enabling interoperability between different systems and facilitating the creation of complex software applications through the reuse of existing functionality.*
+
+### ***`What is a REST API`***
+*A REST API (Representational State Transfer Application Programming Interface) is an architectural style for designing networked applications. It's based on a set of principles that define how resources should be accessed and manipulated over the web. RESTful APIs are designed to be scalable, flexible, and easily maintainable.*
+
+# ***Types of APIs***
+
+*Apart from RESTful APIs, there are several other types of APIs commonly used in software development:*
+
+1. ***`SOAP APIs (Simple Object Access Protocol)`***: *SOAP is a protocol for exchanging structured information in the implementation of web services. SOAP APIs use XML as the message format and can be transported over a variety of protocols, including HTTP, SMTP, and more. SOAP APIs are known for their strong typing, formal contracts, and support for security standards like WS-Security.*
+
+2. ***`GraphQL APIs`***: *GraphQL is a query language for APIs and a runtime for executing those queries. Unlike REST APIs, which expose a fixed set of endpoints returning predefined data structures, GraphQL APIs allow clients to request exactly the data they need using a single endpoint. This flexibility makes GraphQL APIs efficient for clients as they can avoid over-fetching or under-fetching data.*
+
+3. ***`RPC APIs (Remote Procedure Call)`***: *RPC is a protocol that allows a program to execute procedures or methods on a remote server as if they were local. RPC APIs enable communication between distributed systems by invoking functions or procedures on remote servers. Examples of RPC frameworks include gRPC, Thrift, and Apache Avro.*
+
+4. ***`WebSocket APIs`***: *WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection. WebSocket APIs enable real-time, bidirectional communication between clients and servers, making them suitable for applications requiring low latency and high interactivity, such as chat applications and online gaming.*
+
+5. ***`JSON-RPC and XML-RPC APIs`***: *JSON-RPC and XML-RPC are lightweight remote procedure call protocols using JSON and XML, respectively, as the message format. These APIs allow clients to invoke methods or procedures on remote servers using a simple request-response mechanism.*
+
+6. ***`Webhooks`***: *Webhooks are HTTP callbacks or "reverse APIs" that allow applications to receive real-time notifications or events from external services. Instead of polling for updates, applications can register webhook endpoints to be notified whenever certain events occur, such as a new message in a chat application or a payment confirmation in an e-commerce platform.*
+
+*Each type of API has its own strengths and use cases, and the choice of API depends on factors such as the requirements of the application, the nature of the data being exchanged, and the desired level of flexibility and performance.*
+
+## ***HTTP Method to Retrieve Resource(s)***
+
+*The HTTP method typically used to retrieve resource(s) from a server is the ***`GET`*** method.* 
+
+### ***In the context of RESTful APIs:***
+
+- *When a client makes a request to retrieve data from a server, it uses the ***`GET`*** method.*
+- *The server responds to the ***`GET`*** request with the requested resource(s) if they exist, along with an appropriate HTTP status code (usually 200 OK for a successful retrieval).*
+- ***`GET`*** *requests are considered safe and idempotent, meaning they should not modify server state and can be repeated without causing any additional side effects.*
+
+### ***For example, in a RESTful API:***
+
+```
+GET /api/users
+```
+
+
 
 
