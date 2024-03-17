@@ -40,9 +40,10 @@ def handle_404(exception):
     resp = jsonify(data)
     resp.status_code = 404
 
-    return(resp)
+    return (resp)
+
 
 if __name__ == "__main__":
     app.run(
-        host=getenv("HBNB_API_HOST", "0.0.0.0"), 
+        host=getenv("HBNB_API_HOST", "0.0.0.0"),
         port=getenv("HBNB_API_PORT", 5000))
