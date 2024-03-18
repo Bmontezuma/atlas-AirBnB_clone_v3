@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Flask application for state class/entity"""
-from api.v1.views import app_veiws
+from app.v1.views import app_veiws
 from models import storage
 from models.state import State
 from flask import jsonify, abort, request
