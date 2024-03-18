@@ -9,4 +9,4 @@ from api.v1.views.users import *  # Added line to import users.py
 from api.v1.views.places_reviews import *  # Line to import places_reviews.py
 from api.v1.views.places import *  # Added line to import places.py
 
-app_veiws = Blueprint('app_views', __name__, url_prefix='/api/vi')
+app_views = Blueprint('app_views', __name__, url_prefix='/api/v1')
