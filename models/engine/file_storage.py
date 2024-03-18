@@ -45,16 +45,16 @@ class FileStorage:
         gets specific object
         :param cls: class
         :param id: id of instance
-        :return: object or None        
+        :return: object or None
         """
         all_class = self.all(cls)
 
         for obj in all_class.values():
             if id == str(obj.id):
                 return obj
-        
+
         return None
-    
+
     def count(self, cls=None):
         """
         count of instances
@@ -78,7 +78,7 @@ class FileStorage:
                 jo = json.load(f)
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except:
+        except Exception as e:
             pass
 
     def delete(self, obj=None):
