@@ -8,7 +8,7 @@ from models import storage
 
 
 @app_views.route('/status')
-def api_views():
+def app_views():
     """Define a function named
         app_views that handles
         requests to the '/status'
